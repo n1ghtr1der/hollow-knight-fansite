@@ -13,11 +13,7 @@
     margin-bottom: 10px;
 }
 
-#increase-size {
-    margin-right: 25px;
-}
-
-#default-size {
+#increase-size, #default-size  {
     margin-right: 25px;
 }
 
@@ -46,11 +42,11 @@
 main {
     background-color: #1C1B1E;
     width: 100%;
-    height: 717px;
 }
 
-#home {
+#home-container {
     display: flex;
+    height: 717px;
 
 }
 
@@ -70,8 +66,23 @@ main {
     top: 516px;
 }
 
+#steam-button {
+    left: 248px;
+    top: 644px;
+}
+
+#knight1 {
+    position: absolute;
+    width: 333px;
+    height: 577px;
+    left: 1150px;
+    top: 220px;
+}
+
+
 #community {
     display: none;
+    height: 717px;
 }
 
 #community-title {
@@ -88,6 +99,98 @@ main {
     height: 98px;
     left: 1130px;
     top: 510px;
+}
+
+#discord-button {
+    left: 1130px;
+    top: 638px;
+}
+
+#knight2 {
+    position: relative;
+    width: 571px;
+    height: 671px;
+    left: 250px;
+    top: 20px;
+}
+
+#about-us {
+    display: none;
+    height: 1997px;
+    background-color: #1C1B1E;
+}
+
+#about-us-title {
+    position: relative;
+    width: 558px;
+    height: 209px;
+    left: 1080px;
+    top: 180px;
+}
+
+#about-us-description {
+    position: relative;
+    width: 549px;
+    height: 181px;
+    left: 1080px;
+    top: 190px;
+}
+
+#teamcherry-button {
+    left: 1080px;
+    top: 760px;
+}
+
+#team-cherry-img {
+    position: absolute;
+    width: 441px;
+    height: 354px;
+    left: 351px;
+    top: 330px;
+}
+
+#spc1 {
+    margin-top: 400px;
+}
+
+.space {
+    display: flexbox;
+    justify-content: center;
+    margin-left: 15%;
+    width: 70%;
+    height: 2px;
+    background-color: #FFFBFE;
+}
+
+#lead-title {
+    position: absolute;
+    width: 558px;
+    height: 70px;
+    left: 351px;
+    top: 1150px;
+
+}
+
+#lead-description {
+    position: absolute;
+    width: 549px;
+    height: 136px;
+    left: 351px;
+    top: 1245px;
+}
+
+#lead-button {
+    left: 351px;
+    top: 1411px;
+}
+
+#lead-img {
+    position: absolute;
+    left: 1080px;
+    top: 1200px;
+}
+#spc2 {
+    margin-top: 750px;
 }
 
 
@@ -122,22 +225,10 @@ main {
     font-size: 15px;
 }
 
-#steam-button {
-    left: 248px;
-    top: 644px;
-}
-
-#steam-button img {
+.page-button img {
     margin-right: 10px;
 }
 
-#knight1 {
-    position: absolute;
-    width: 555px;
-    height: 715px;
-    left: 1150px;
-    top: 140px;
-}
 
 .footer-infos {
     display: inline-flex;
