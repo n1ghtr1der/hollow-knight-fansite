@@ -21,41 +21,78 @@
     <div id="nav-bar">
         <nav>
             <ul>
-                <li onmousedown="clickStuff()">COMUNIDADE</li>
-                <li>HOME</li>
-                <li>SOBRE NÓS</li>
+                <li id="nav-community">COMUNIDADE</li>
+                <li id="nav-home">HOME</li>
+                <li id="nav-aboutus">SOBRE NÓS</li>
             </ul>
         </nav>
     </div>
     
     <main>
         <section id="home-container">
-            <p id="home-title" class="section-title">Enfrente as profundezas de um reino esquecido</p>
-            <p id="home-description" class="description">Como o enigmático Cavaleiro, você atravessará as profundezas, desvendará seus mistérios e vencerá seus males.</p>
-            <a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank"><button id="steam-button" class="page-button"><img src="icons/bi_steam.png" alt="steam logo">BAIXE AGORA</button></a>
-            <img id="knight1" src="images/The_Knight.png" alt="Hollow Knight">
-        </section>
-        <section id="community">
-            <p id="community-title" class="section-title">Explore mundos interconectados</p>
-            <p id="community-description" class="description">Faça parte da comunidade, encontre uma imensidão de amigos e evolua com novas habilidades</p>
-            <a href="https://discord.com/invite/hollowknight" target="_blank"><button id="discord-button" class="page-button"><img src="icons/akar-icons_discord-fill.png" alt="discord logo">ENTRAR NA COMUNIDADE</button></a>
-            <img id="knight2" src="images/dark-knight.png" alt="Hollow Knight">
-        </section>
-        <section id="about-us">
-            <div>
-                <p id="about-us-title" class="section-title">Construindo mundos bizarros para você explorar</p>
-                <p id="about-us-description" class="description">Team cherry é um pequeno time de desenvolvimento independete de Adelaide, Austrália. O time é formado por apenas três pessoas que são resposáveis por tudo neste universo!</p>
-                <a href="https://www.teamcherry.com.au/" target="_blank"><button id="teamcherry-button" class="page-button"><img src="icons/team-cherry.png" alt="Team Cherry icon">VISITE O SITE OFICIAL</button></a>
-                <img id="team-cherry-img" src="images/team-cherry-logo.png" alt="Team Cherry logo">
-                <div id="spc1" class="space"></div>
+            <div class="home-child">
+                <p id="home-title" class="section-title">Enfrente as profundezas de um reino esquecido</p>
+                <p id="home-description" class="description">Como o enigmático Cavaleiro, você atravessará as profundezas, desvendará seus mistérios e vencerá seus males.</p>
+                <a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank"><button id="steam-button" class="page-button"><img src="icons/bi_steam.png" alt="steam logo">BAIXE AGORA</button></a>    
             </div>
-            <div>
-                <p id="lead-title" class="section-title">Lead Mentoring</p>
-                <p id="lead-description" class="description">Este site foi desenvolvido como parte de um desafio para o Lead Mentoring, visando implementar conceitos de desenvolvimento web e acessibilidade.</p>
-                <a href="https://leadfortaleza.com.br/portal" target="_blank"><button id="lead-button" class="page-button">CONHEÇA O LEAD</button></a>
-                <img id="lead-img" src="images/lead-logo.png" alt="Lead logo">
-                <div id="spc2" class="space"></div>
+            <div class="home-child">
+                <img id="knight1" src="images/The_Knight.png" alt="Hollow Knight">
             </div>
+        </section>
+        <section id="community-container">
+            <div class="community-child">
+                <p id="community-title" class="section-title">Explore mundos interconectados</p>
+                <p id="community-description" class="description">Faça parte da comunidade, encontre uma imensidão de amigos e evolua com novas habilidades</p>
+                <a href="https://discord.com/invite/hollowknight" target="_blank"><button id="discord-button" class="page-button"><img src="icons/akar-icons_discord-fill.png" alt="discord logo">ENTRAR NA COMUNIDADE</button></a>    
+            </div>
+            <div class="community-child">
+                <img id="knight2" src="images/dark-knight.png" alt="Hollow Knight">
+            </div>
+        </section>
+        <section class="aboutus-container">
+            <div class="team-cherry-container">
+                <div class="team-cherry-child">
+                    <p id="about-us-title" class="section-title">Construindo mundos bizarros para você explorar</p>
+                    <p id="about-us-description" class="description">Team cherry é um pequeno time de desenvolvimento independete de Adelaide, Austrália. O time é formado por apenas três pessoas que são resposáveis por tudo neste universo!</p>
+                    <a href="https://www.teamcherry.com.au/" target="_blank"><button id="teamcherry-button" class="page-button"><img src="icons/team-cherry.png" alt="Team Cherry icon">VISITE O SITE OFICIAL</button></a>
+                </div>
+
+                <div class="team-cherry-child">
+                    <img id="team-cherry-img" src="images/team-cherry-logo.png" alt="Team Cherry logo">
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="lead-container">
+                <div class="lead-child">
+                    <p id="lead-title" class="section-title">Lead Mentoring</p>
+                    <p id="lead-description" class="description">Este site foi desenvolvido como parte de um desafio para o Lead Mentoring, visando implementar conceitos de desenvolvimento web e acessibilidade.</p>
+                    <a href="https://leadfortaleza.com.br/portal" target="_blank"><button id="lead-button" class="page-button">CONHEÇA O LEAD</button></a>
+                </div>
+
+                <div class="lead-child">
+                    <img id="lead-img" src="images/lead-logo.png" alt="Lead logo">
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="mentoring-container">
+                <div class="mentoring-child">
+                    <img class="mentoring-img" src="images/victor.jpg" alt="Victor Martins">
+                    <p class="mentoring-name">VICTOR MARTINS</p>
+                    <P class="mentoring-description">Mentorando FullStack na Lead Dell</P>
+                </div>
+                <div class="mentoring-child">
+                    <img class="mentoring-img" src="images/christian.png" alt="Christian Castro">
+                    <p class="mentoring-name">CHRISTIAN CASTRO</p>
+                    <p class="mentoring-description">Mentor e desenvolvedor FullStack na Lead Dell</p>
+                </div>
+                <div class="mentoring-child">
+                    <img class="mentoring-img" src="images/emirton.jpg" alt="Emirton Sousa">
+                    <p class="mentoring-name">EMIRTON SOUSA</p>
+                    <p class="mentoring-description">Mentorando FullStack na Lead Dell</p>
+                </div>
+            </div>
+            
+            
         </section>
     </main>
 
