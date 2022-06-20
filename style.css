@@ -55,7 +55,7 @@ main {
 }
 
 #home-container {
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     min-height: 717px;
     max-height: 100%;
@@ -128,8 +128,8 @@ main {
     margin-left: 30%;
 }
 
-.aboutus-container {
-    display: block;
+#aboutus-container {
+    display: none;
     min-height: 1997px;
     max-height: auto;
 }
