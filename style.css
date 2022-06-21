@@ -42,15 +42,15 @@
 }
 
 #nav-community {
-    font-size: 1.875rem;
+    font-size: 1.875rem; /*30px*/
 }
 
 #nav-home {
-    font-size: 1.875rem;
+    font-size: 1.875rem; /*30px*/
 }
 
 #nav-aboutus {
-    font-size: 1.875rem;
+    font-size: 1.875rem; /*30px*/
 }
 
 main {
@@ -228,7 +228,7 @@ main {
 .mentoring-name {
     font-family: 'Poppins';
     color:#FFFFFF;
-    font-size: 1.125px;
+    font-size: 1.125rem; /*18px*/
     text-align: center;
     margin-bottom: 5px;
 }
@@ -236,13 +236,13 @@ main {
 .mentoring-description {
     font-family: 'Poppins';
     color: #FFFFFF;
-    font-size: 0.938rem;
+    font-size: 0.938rem; /*15px*/
     text-align: center;
 }
 
 .section-title {
     color: #FFFFFF;
-    font-size: 3.625rem;
+    font-size: 3.625rem; /*58px*/
     font-family: 'Poppins';
 }
 
@@ -250,7 +250,7 @@ main {
     color: #FFFBFE;
     font-family: 'Poppins';
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /*24px*/
     line-height: 36px;
 }
 
@@ -267,7 +267,7 @@ main {
     background-color: #4D368F;
     color: #FFFBFE;
     font-family: 'Poppins';
-    font-size: 0.938rem;
+    font-size: 0.938rem; /*15px*/
 }
 
 .page-button img {
@@ -293,7 +293,7 @@ main {
 }
 
 .footer-infos p {
-    font-size: 0.938rem;
+    font-size: 0.938rem; /*15px*/
     flex-grow: 1;
     text-align: center;
     color: #ffffff;
