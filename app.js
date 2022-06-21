@@ -9,7 +9,6 @@ navAboutus.addEventListener('click', showAboutus);
 home = document.getElementById("home-container");
 community = document.getElementById("community-container");
 aboutus = document.getElementById("aboutus-container");
-    /**/
 
 function showHome() {
     console.log('home');
@@ -31,3 +30,11 @@ function showAboutus() {
     community.style.display = 'none';
     aboutus.style.display = 'block';
 }
+
+var increaseSize = document.getElementById("increase-size");
+var defaultSize = document.getElementById("default-size");
+var decreaseSize = document.getElementById("decrease-size");
+
+increaseSize.addEventListener('click', );
+defaultSize.addEventListener('click', );
+decreaseSize.addEventListener('click', );
