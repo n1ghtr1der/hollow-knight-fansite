@@ -35,6 +35,18 @@ var increaseSize = document.getElementById("increase-size");
 var defaultSize = document.getElementById("default-size");
 var decreaseSize = document.getElementById("decrease-size");
 
-increaseSize.addEventListener('click', );
-defaultSize.addEventListener('click', );
-decreaseSize.addEventListener('click', );
+//increaseSize.addEventListener('click', );
+//defaultSize.addEventListener('click', );
+//decreaseSize.addEventListener('click', );
+
+
+//increase size idea
+/*function increaseFontSize() {
+    var element = document.getElementById("hollowknight-container");
+    var style = getComputedStyle(element).getPropertyValue("font-size");
+    console.log(style);
+    var fSize = parseFloat(style);
+    element.style.fontSize = (fSize + 20) + 'px';
+    console.log(style); 
+    
+}*/
