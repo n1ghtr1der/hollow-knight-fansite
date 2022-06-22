@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-#html {
-    font-size: 100%;
-}
-
 .access-bar-container {
     width: 100%;
     height: 60px;
@@ -42,15 +38,21 @@
 }
 
 #nav-community {
-    font-size: 1.875rem; /*30px*/
+    font-size: 30px; /*1.875rem*/
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
 }
 
 #nav-home {
-    font-size: 1.875rem; /*30px*/
+    font-size: 40px; /*1.875rem*/
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
 }
 
 #nav-aboutus {
-    font-size: 1.875rem; /*30px*/
+    font-size: 30px; /*1.875rem*/
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
 }
 
 main {
@@ -228,30 +230,38 @@ main {
 .mentoring-name {
     font-family: 'Poppins';
     color:#FFFFFF;
-    font-size: 1.125rem; /*18px*/
+    font-size: 18px; /*1.125rem*/
     text-align: center;
     margin-bottom: 5px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 .mentoring-description {
     font-family: 'Poppins';
     color: #FFFFFF;
-    font-size: 0.938rem; /*15px*/
+    font-size: 15px; /*0.938rem*/
     text-align: center;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 .section-title {
     color: #FFFFFF;
-    font-size: 3.625rem; /*58px*/
+    font-size: 58px; /*3.625rem*/
     font-family: 'Poppins';
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 .description {
     color: #FFFBFE;
     font-family: 'Poppins';
     font-style: normal;
-    font-size: 1.5rem; /*24px*/
+    font-size: 24px; /*1.5rem*/
     line-height: 36px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 .page-button {
@@ -267,7 +277,7 @@ main {
     background-color: #4D368F;
     color: #FFFBFE;
     font-family: 'Poppins';
-    font-size: 0.938rem; /*15px*/
+    font-size: 15px; /*0.938rem*/
 }
 
 .page-button img {
@@ -293,7 +303,7 @@ main {
 }
 
 .footer-infos p {
-    font-size: 0.938rem; /*15px*/
+    font-size: 15px; /*0.938rem*/
     flex-grow: 1;
     text-align: center;
     color: #ffffff;

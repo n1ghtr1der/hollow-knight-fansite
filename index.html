@@ -13,17 +13,17 @@
     <div class="access-bar-container">
         
         <ul>
-            <li><input id="increase-size" type="image" src="icons/Group 2.png" alt="aumentar fonte"></li>
-            <li><input id="default-size" type="image" src="icons/Group 3.png" alt="fonte padrão"></li>
-            <li><input id="decrease-size" type="image" src="icons/Group 4.png" alt="diminuir fonte"></li>
+            <li><input id="increase-size" type="image" src="icons/Group 2.png" alt="aumentar fonte" onclick="changeFontSize('increase-font')"></li>
+            <li><input id="default-size" type="image" src="icons/Group 3.png" alt="fonte padrão" onclick="changeFontSize('default-font')"></li>
+            <li><input id="decrease-size" type="image" src="icons/Group 4.png" alt="diminuir fonte" onclick="changeFontSize('decrease-font')"></li>
         </ul> 
     </div>
     <div id="nav-bar">
         <nav>
             <ul>
-                <li id="nav-community">COMUNIDADE</li>
-                <li id="nav-home">HOME</li>
-                <li id="nav-aboutus">SOBRE NÓS</li>
+                <li id="nav-community" onclick="navigate('community')">COMUNIDADE</li>
+                <li id="nav-home" onclick="navigate('home')">HOME</li>
+                <li id="nav-aboutus" onclick="navigate('about-us')">SOBRE NÓS</li>
             </ul>
         </nav>
     </div>
@@ -77,25 +77,25 @@
             <div class="mentoring-container">
                 <div class="mentoring-child">
                     <img class="mentoring-img" src="images/victor.jpg" alt="Victor Martins">
-                    <p class="mentoring-name">VICTOR MARTINS</p>
-                    <P class="mentoring-description">Mentorando FullStack na Lead Dell</P>
+                    <p id="mentoring-name1" class="mentoring-name">VICTOR MARTINS</p>
+                    <P id="mentoring-description1" class="mentoring-description">Mentorando FullStack na Lead Dell</P>
                 </div>
                 <div class="mentoring-child">
                     <img class="mentoring-img" src="images/christian.png" alt="Christian Castro">
-                    <p class="mentoring-name">CHRISTIAN CASTRO</p>
-                    <p class="mentoring-description">Mentor e desenvolvedor FullStack na Lead Dell</p>
+                    <p id="mentoring-name2" class="mentoring-name">CHRISTIAN CASTRO</p>
+                    <p id="mentoring-description2" class="mentoring-description">Mentor e desenvolvedor FullStack na Lead Dell</p>
                 </div>
                 <div class="mentoring-child">
                     <img class="mentoring-img" src="images/emirton.jpg" alt="Emirton Sousa">
-                    <p class="mentoring-name">EMIRTON SOUSA</p>
-                    <p class="mentoring-description">Mentorando FullStack na Lead Dell</p>
+                    <p id="mentoring-name3" class="mentoring-name">EMIRTON SOUSA</p>
+                    <p id="mentoring-description3" class="mentoring-description">Mentorando FullStack na Lead Dell</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer-infos">
-        <p>Copyright © 2022, Todos os direitos reservados</p>
+        <p id="footer-text">Copyright © 2022, Todos os direitos reservados</p>
         <ul>
             <li><a href="https://www.youtube.com/channel/UCZS2K8ZsUmujTuj3cNMyBSA" target="_blank"><input type="image" src="icons/akar-icons_youtube-fill.png" alt="youtube"></a></li>
             <li><a href="https://twitter.com/TeamCherryGames" target="_blank"><input type="image" src="icons/akar-icons_twitter-fill.png" alt="twitter"></a></li>
