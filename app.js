@@ -1,52 +1,56 @@
-var navHome = document.getElementById("nav-home");
-var navCommunity = document.getElementById("nav-community");
-var navAboutus = document.getElementById("nav-aboutus");
-
-navHome.addEventListener('click', showHome);
-navCommunity.addEventListener('click', showCommunity);
-navAboutus.addEventListener('click', showAboutus);
-
 home = document.getElementById("home-container");
 community = document.getElementById("community-container");
-aboutus = document.getElementById("aboutus-container");
+aboutUs = document.getElementById("aboutus-container");
 
-function showHome() {
-    console.log('home');
-    home.style.display = 'flex';
-    community.style.display = 'none';
-    aboutus.style.display = 'none';
+function navigate(page){
+    console.log(page);
+    switch(page) {
+        case "home":
+            home.style.display = 'flex';
+            community.style.display = 'none';
+            aboutUs.style.display = 'none';
+            document.getElementById("nav-home").style.fontSize = '40px';
+            document.getElementById("nav-community").style.fontSize = '30px';
+            document.getElementById("nav-aboutus").style.fontSize = '30px';
+            break;
+        case "community":
+            home.style.display = 'none';
+            community.style.display = 'flex';
+            aboutUs.style.display = 'none';
+            document.getElementById("nav-home").style.fontSize = '30px';
+            document.getElementById("nav-community").style.fontSize = '40px';
+            document.getElementById("nav-aboutus").style.fontSize = '30px';
+            break;
+        case "about-us":
+            home.style.display = 'none';
+            community.style.display = 'none';
+            aboutUs.style.display = 'block';
+            document.getElementById("nav-home").style.fontSize = '30px';
+            document.getElementById("nav-community").style.fontSize = '30px';
+            document.getElementById("nav-aboutus").style.fontSize = '40px';
+            break;
+    }
 }
 
-function showCommunity() {
-    console.log('community');
-    home.style.display = 'none';
-    community.style.display = 'flex';
-    aboutus.style.display = 'none';
-}
 
-function showAboutus() {
-    console.log('about us');
-    home.style.display = 'none';
-    community.style.display = 'none';
-    aboutus.style.display = 'block';
-}
-
-var increaseSize = document.getElementById("increase-size");
-var defaultSize = document.getElementById("default-size");
-var decreaseSize = document.getElementById("decrease-size");
-
-//increaseSize.addEventListener('click', );
-//defaultSize.addEventListener('click', );
-//decreaseSize.addEventListener('click', );
-
-
-//increase size idea
-/*function increaseFontSize() {
-    var element = document.getElementById("hollowknight-container");
-    var style = getComputedStyle(element).getPropertyValue("font-size");
-    console.log(style);
-    var fSize = parseFloat(style);
-    element.style.fontSize = (fSize + 20) + 'px';
-    console.log(style); 
+function changeFontSize(type) {
+    let elements = ["#nav-community", "#nav-home", "#nav-aboutus", "#home-title", "#home-description", "#community-title", "#community-description", "#about-us-title", "#about-us-description", "#lead-title", "#lead-description", "#mentoring-name1", "#mentoring-description1", "#mentoring-name2", "#mentoring-description2", "#mentoring-name3", "#mentoring-description3"];
     
-}*/
+    breakElement = document.getElementById("home-title");
+    breakpoint = getComputedStyle(breakElement, null).getPropertyValue("font-size");
+    breakpoint = parseInt(breakpoint);
+    
+
+    
+    elements.forEach(id => {
+        let el = document.querySelector(id);
+        let fontSize = getComputedStyle(el, null).getPropertyValue("font-size");
+        fontSize = parseFloat(fontSize);
+
+        if(type == 'increase-font' && breakpoint < 66){
+            el.style.fontSize = (fontSize + 2) + "px";
+        }if (type == 'decrease-font' && breakpoint > 50) {
+            el.style.fontSize = (fontSize - 2) + "px";
+        }
+    });
+}
