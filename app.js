@@ -49,33 +49,3 @@ function changeFontSize(type) {
             break;
     }
 }
-
-
-
-
-
-
-
-//let elements = ["#nav-community", "#nav-home", "#nav-aboutus", "#home-title", "#home-description", "#community-title", "#community-description", "#about-us-title", "#about-us-description", "#lead-title", "#lead-description", "#mentoring-name1", "#mentoring-description1", "#mentoring-name2", "#mentoring-description2", "#mentoring-name3", "#mentoring-description3", "#steam-button", "#discord-button", "#teamcherry-button", "#lead-button"];
-
-
-/*function changeFontSize(type) {
-      
-    breakElement = document.getElementById("home-title");
-    breakpoint = getComputedStyle(breakElement, null).getPropertyValue("font-size");
-    breakpoint = parseInt(breakpoint);
-    
-
-    
-    elements.forEach(id => {
-        let el = document.querySelector(id);
-        let fontSize = getComputedStyle(el, null).getPropertyValue("font-size");
-        fontSize = parseFloat(fontSize);
-
-        if(type == 'increase-font' && breakpoint < 66){
-            el.style.fontSize = (fontSize + 2) + "px";
-        }if(type == 'decrease-font' && breakpoint > 50){
-            el.style.fontSize = (fontSize - 2) + "px";
-        }
-    });
-}*/
