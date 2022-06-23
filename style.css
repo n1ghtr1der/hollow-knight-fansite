@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+#html {
+    font-size: 100%;
+}
+
 .access-bar-container {
     width: 100%;
     height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     background-color: black;
-    text-align: right;
 }
 
 .access-bar-container li {
-    display: inline-block;
+    display: inline-flex;
+
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -30,6 +37,7 @@
 
 #nav-bar li {
     display: inline-flex;
+    flex-wrap: nowrap;
     margin-left: 40px;
     margin-right: 40px;
     line-height: 80px;
@@ -38,19 +46,19 @@
 }
 
 #nav-community {
-    font-size: 30px; /*1.875rem*/
+    font-size: 1.875rem; /*20px*/
     transition: 0.1s;
     transition-timing-function: ease-in-out;
 }
 
 #nav-home {
-    font-size: 40px; /*1.875rem*/
+    font-size: 1.875rem; /*30px*/
     transition: 0.1s;
     transition-timing-function: ease-in-out;
 }
 
 #nav-aboutus {
-    font-size: 30px; /*1.875rem*/
+    font-size: 1.875rem; /*20px*/
     transition: 0.1s;
     transition-timing-function: ease-in-out;
 }
@@ -58,6 +66,7 @@
 main {
     background-color: #1C1B1E;
     width: 100%;
+    margin: auto;
 }
 
 #home-container {
@@ -70,17 +79,23 @@ main {
 }
 
 .home-child {
+    width: auto;
     flex: 1;
 }
 
 .home-child:first-child {
-    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-self: center;
+    margin-left: 10%;
+    padding-left: 100px;
+    padding: 70px;
 }
 
 
 #home-title {
-    width: 693px;;
+    width: 600px;
     margin-bottom: 25px;
 }
 
@@ -96,7 +111,9 @@ main {
 #knight1 {
     width: 333px;
     height: 577px;
-    margin-left: 15%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25%;
 }
 
 
@@ -138,11 +155,15 @@ main {
     display: none;
     min-height: 1997px;
     max-height: auto;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
 .team-cherry-container {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
     flex-direction: row-reverse;
 }
 
@@ -172,11 +193,15 @@ main {
 
 #team-cherry-img {
     width: 441px;
+    height: 353px;
+    margin: auto;
 }
 
 
 .lead-container {
     display: flex;
+    width: 100%;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 150px;
@@ -186,7 +211,7 @@ main {
 .lead-child {
     margin-top: 5px;
     flex: 1;
-    align-self: center;
+    
 }
 
 .lead-child:first-child {
@@ -209,12 +234,18 @@ main {
 }
 
 .mentoring-container {
-    display: inline-flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 150px;
 }
 
 .mentoring-child {
-    margin-left: 26.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
 }
 
 .mentoring-img {
@@ -230,7 +261,7 @@ main {
 .mentoring-name {
     font-family: 'Poppins';
     color:#FFFFFF;
-    font-size: 18px; /*1.125rem*/
+    font-size: 1.125rem; /*18px*/
     text-align: center;
     margin-bottom: 5px;
     transition: 0.2s;
@@ -240,7 +271,7 @@ main {
 .mentoring-description {
     font-family: 'Poppins';
     color: #FFFFFF;
-    font-size: 15px; /*0.938rem*/
+    font-size: 0.938rem; /*15px*/
     text-align: center;
     transition: 0.2s;
     transition-timing-function: ease-in-out;
@@ -248,7 +279,7 @@ main {
 
 .section-title {
     color: #FFFFFF;
-    font-size: 58px; /*3.625rem*/
+    font-size: 3.625rem; /*58px*/
     font-family: 'Poppins';
     transition: 0.2s;
     transition-timing-function: ease-in-out;
@@ -258,7 +289,7 @@ main {
     color: #FFFBFE;
     font-family: 'Poppins';
     font-style: normal;
-    font-size: 24px; /*1.5rem*/
+    font-size: 1.5rem; /*24px*/
     line-height: 36px;
     transition: 0.2s;
     transition-timing-function: ease-in-out;
@@ -277,7 +308,7 @@ main {
     background-color: #4D368F;
     color: #FFFBFE;
     font-family: 'Poppins';
-    font-size: 15px; /*0.938rem*/
+    font-size: 0.938rem; /*15px*/
 }
 
 .page-button img {
@@ -303,7 +334,7 @@ main {
 }
 
 .footer-infos p {
-    font-size: 15px; /*0.938rem*/
+    font-size: 0.938rem; /*15px*/
     flex-grow: 1;
     text-align: center;
     color: #ffffff;
