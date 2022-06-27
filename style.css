@@ -2,9 +2,6 @@
 
 #html {
     font-size: 100%;
-}
-
-body {
     max-width: 100%;
     min-width: 800px;
 }
@@ -76,16 +73,13 @@ body {
 
 main {
     background-color: #1C1B1E;
-    width: auto;
-    height: auto;
-    margin: auto;
 }
 
 #home-container {
     display: flex;
     flex-wrap: wrap;
     min-height: 717px;
-    max-height: 100%;
+    max-width: 100%;
     justify-content: center;
 
 }
@@ -147,11 +141,11 @@ main {
 }
 
 .community-child:first-child {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3%;
+    padding: 7%;
 }
 
 .community-child:last-child {
@@ -204,11 +198,14 @@ main {
     padding-top: 5%;
     padding-right: 10%;
     padding-left: 5%;
+    padding-bottom: 5%;
 }
 
 .team-cherry-child:last-child {
-    margin-top: 5%;
-    margin-left: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
 }
 
 #about-us-title {
@@ -224,7 +221,6 @@ main {
 #team-cherry-img {
     width: auto;
     height: 353px;
-    margin: auto;
 }
 
 
@@ -234,7 +230,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 120px;
+
 
 }
 
@@ -371,7 +367,7 @@ main {
     border-radius: 25px;
     background-color: #FFFFFF;
     margin-left: 10%;
-    margin-top: 200px;
+    margin-top: 130px;
 
 }
 
