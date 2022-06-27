@@ -4,6 +4,11 @@
     font-size: 100%;
 }
 
+body {
+    max-width: 100%;
+    min-width: 800px;
+}
+
 .access-bar-container {
     width: 100%;
     height: 60px;
@@ -67,12 +72,12 @@
 
 #nav-community:hover, #nav-home:hover, #nav-aboutus:hover {
     background-color: #1C1B1E;
-    font-size: 32px;
 } 
 
 main {
     background-color: #1C1B1E;
-    width: 100%;
+    width: auto;
+    height: auto;
     margin: auto;
 }
 
@@ -95,6 +100,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    padding-top: 5%;
     padding-left: 9%;
     padding-bottom: 7%;
 }
@@ -129,8 +135,7 @@ main {
 #community-container {
     display: none;
     width: auto;
-    min-height: 717px;
-    max-height: auto;
+    height: 100%;
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: center;
@@ -142,11 +147,16 @@ main {
 }
 
 .community-child:first-child {
-    padding: 5%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%;
 }
 
 .community-child:last-child {
     display: flex;
+    width: auto;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -164,6 +174,7 @@ main {
 }
 
 #knight2 {
+    margin: auto;
     width: auto;
     height: 671px;
 }
@@ -197,7 +208,7 @@ main {
 
 .team-cherry-child:last-child {
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 9%;
 }
 
 #about-us-title {
@@ -247,6 +258,7 @@ main {
     width: auto;
     display: flex;
     justify-content: center;
+    padding: 8%;
 }
 
 #lead-title {
