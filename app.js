@@ -4,7 +4,6 @@ aboutUs = document.getElementById("aboutus-container");
 
 
 function navigate(page){
-    console.log(page);
     switch(page) {
         case "home":
             home.style.display = 'flex';
