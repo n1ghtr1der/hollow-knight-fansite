@@ -36,10 +36,10 @@ function changeFontSize(type) {
     fontSize = parseInt(fontSize);
 
     switch(true) {
-        case type == 'increase-font' && fontSize < 24:
+        case type == 'increase-font' && fontSize < 22:
             element.style.fontSize = (fontSize + 2) + "px";
             break;
-        case type == 'decrease-font' && fontSize > 8:
+        case type == 'decrease-font' && fontSize > 10:
             element.style.fontSize = (fontSize - 2) + "px";
             break;
         case type == 'default-font':
