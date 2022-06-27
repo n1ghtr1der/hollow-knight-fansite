@@ -4,6 +4,7 @@
     font-size: 100%;
     max-width: 100%;
     min-width: 800px;
+    background-color: #1C1B1E;
 }
 
 .access-bar-container {
@@ -50,19 +51,19 @@
 }
 
 #nav-community {
-    font-size: 1.875rem; /*20px*/
+    font-size: 1.25rem; /*20px*/
     transition: 0.1s;
     transition-timing-function: ease-in-out;
 }
 
 #nav-home {
-    font-size: 1.875rem; /*30px*/
+    font-size: 1.25rem; /*20px*/
     transition: 0.1s;
     transition-timing-function: ease-in-out;
 }
 
 #nav-aboutus {
-    font-size: 1.875rem; /*20px*/
+    font-size: 1.25rem; /*20px*/
     transition: 0.1s;
     transition-timing-function: ease-in-out;
 }
@@ -78,7 +79,8 @@ main {
 #home-container {
     display: flex;
     flex-wrap: wrap;
-    min-height: 717px;
+    min-height: 747px;
+    max-height: auto;
     max-width: 100%;
     justify-content: center;
 
@@ -129,7 +131,8 @@ main {
 #community-container {
     display: none;
     width: auto;
-    height: 100%;
+    min-height: 717px;
+    max-width: auto;
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: center;
@@ -270,6 +273,11 @@ main {
 
 #lead-img {
     padding-top: 15%;
+}
+
+#lead-icon {
+    width: 30px;
+    height: 30px;
 }
 
 .mentoring-container {
