@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="images/hollow-knight-screenshot.png" width="1024" height="576"/>
+  <br><br>
+</p>
+
 <h1 align="center">Hollow Knight Fansite</h1> 
 <div align="center">
 <br><br>
@@ -11,6 +16,8 @@
 
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [Executar na sua máquina](#-executar-na-sua-máquina)
+- [Licença](#-licença)
 <br><br>
 ## 💡 Sobre o Projeto
 
